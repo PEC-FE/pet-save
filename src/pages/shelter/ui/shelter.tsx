@@ -1,4 +1,4 @@
-import { ShelterFilter } from '@/src/features/shelter';
+import { ShelterAddButton, ShelterFilter } from '@/src/features/shelter';
 import { ShelterList, useShelters } from '@/src/widgets/shelter';
 
 export default function Shelter() {
@@ -10,6 +10,7 @@ export default function Shelter() {
       <h1>보호소 페이지</h1>
       <ShelterFilter />
       <ShelterList shelters={shelters} />
+      <ShelterAddButton />
     </div>
   );
 }
