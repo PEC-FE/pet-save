@@ -1,4 +1,4 @@
-import { VolunteerFilter } from '@/src/features/volunteer';
+import { VolunteerAddButton, VolunteerFilter } from '@/src/features/volunteer';
 import { useVolunteers, VolunteerList } from '@/src/widgets/volunteer';
 
 export default function VolunteerPage() {
@@ -9,6 +9,7 @@ export default function VolunteerPage() {
     <div>
       <VolunteerFilter />
       <VolunteerList volunteers={volunteers} />
+      <VolunteerAddButton />
     </div>
   );
 }
