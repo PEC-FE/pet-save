@@ -1,1 +1,1 @@
-export const postVolunteerJoinAction = () => <>postVolunteerJoinAction</>;
+export const VolunteerJoinFavoriteButton = () => <>VolunteerJoinFavoriteButton</>;
