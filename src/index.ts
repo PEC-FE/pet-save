@@ -5,6 +5,5 @@
 export * from './app/index';
 export * from './entities/index';
 export * from './features/index';
-export * from './pages/index';
 export * from './shared/index';
 export * from './widgets/index';

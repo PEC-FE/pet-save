@@ -4,5 +4,9 @@
 
 export * from './getServant.api';
 export * from './getServantList.api';
+export * from './mapToServantDetail';
+export * from './mapToServantList';
 export * from './postServant.api';
+export * from './postServantRequest.api';
 export * from './putServant';
+export * from './type';

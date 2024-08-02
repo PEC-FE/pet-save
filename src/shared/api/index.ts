@@ -4,3 +4,6 @@
 
 export * from './errorHandler';
 export * from './http';
+export * from './servant/index';
+export * from './shelter/index';
+export * from './volunteer/index';
