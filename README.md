@@ -1,4 +1,4 @@
-# Pet Seve
+# Pet Save
 
 유기 동물 보호소와 봉사활동을 하고 싶은 사람들을 연결하는
 
@@ -14,6 +14,11 @@
 - Next.js
 - TypeScript
 - Eslint
+- Tanstack-query
+- zustand
+- Design System(Chakra UI)
+- emotion/styled
+- react-hook-form
 
 ## Scripts
 
