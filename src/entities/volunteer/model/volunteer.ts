@@ -1,1 +1,3 @@
-export type VolunteerModel = {};
+export type VolunteerModel = {
+  name: string;
+};

@@ -1,1 +1,1 @@
-export const ServantList = () => <>ServantList</>;
+export const ServantProfile = () => <>ServantProfile</>;
