@@ -1,1 +1,3 @@
-export type ShelterModel = {};
+export type ShelterModel = {
+  name: string;
+};
