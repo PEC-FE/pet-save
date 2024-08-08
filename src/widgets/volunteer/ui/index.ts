@@ -4,5 +4,4 @@
 
 export * from './VolunteerFilterForm';
 export * from './VolunteerInfo';
-export * from './VolunteerList';
 export * from './VolunteerRegistrationForm';
