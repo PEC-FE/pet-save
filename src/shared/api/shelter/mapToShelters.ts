@@ -1,19 +1,20 @@
-import { createShelter, Pagination, Shelter, Shelters } from '@/src/entities';
+import { Shelter, Shelters } from '@/src/entities';
 import { ApiShelterResponse } from './type';
+import { Pagination } from '@/src/entities/common/model';
 
 export const mapToShelters = (apiResponse: ApiShelterResponse): Shelters => {
   const items = apiResponse.response.body.items.item;
 
-  const shelters: Shelter[] = items.map((item) =>
-    createShelter(
-      item.careNm._text,
-      item.divisionNm._text,
-      item.saveTrgtAnimal._text,
-      item.careAddr._text,
-      item.careTel._text,
-      `${item.weekOprStime._text} - ${item.weekOprEtime._text}`,
-    ),
-  );
+  const shelters: Shelter[] = items.map((item) => {
+    return {
+      name: item.careNm._text,
+      type: item.divisionNm._text,
+      animalType: item.saveTrgtAnimal._text,
+      address: item.careAddr._text,
+      phoneNumber: item.careTel._text,
+      operatingHours: `${item.weekOprStime._text} - ${item.weekOprEtime._text}`,
+    };
+  });
 
   const pagination: Pagination = {
     totalCount: parseInt(apiResponse.response.body.totalCount._text, 10),
@@ -27,6 +28,6 @@ export const mapToShelters = (apiResponse: ApiShelterResponse): Shelters => {
 
   return {
     shelters,
-    pagination,
+    ...pagination,
   };
 };
