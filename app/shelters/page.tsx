@@ -29,9 +29,9 @@ const SheltersPage = () => {
             <hr />
           </li>
         ))}
-        <div>totalCount: {sheltersData.pagination.totalCount}</div>
-        <div>currentPage: {sheltersData.pagination.currentPage}</div>
-        <div>pageSize: {sheltersData.pagination.pageSize}</div>
+        <div>totalCount: {sheltersData.totalCount}</div>
+        <div>currentPage: {sheltersData.currentPage}</div>
+        <div>pageSize: {sheltersData.pageSize}</div>
       </ul>
     </div>
   );
