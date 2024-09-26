@@ -12,3 +12,6 @@ export interface Shelter {
 export interface Shelters extends Pagination {
   shelters: Shelter[];
 }
+export type ShelterModel = {
+  name: string;
+};

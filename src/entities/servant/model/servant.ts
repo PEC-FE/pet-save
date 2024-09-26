@@ -1,1 +1,3 @@
-export type ServantModel = {};
+export type ServantModel = {
+  name: string;
+};

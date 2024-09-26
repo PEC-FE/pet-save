@@ -1,7 +1,11 @@
 {
   "delete": true,
   "directory": [
-    "./src"
+    "./src/app",
+    "./src/entities",
+    "./src/features",
+    "./src/shared",
+    "./src/widgets"
   ],
   "exclude": [],
   "location": "all",
