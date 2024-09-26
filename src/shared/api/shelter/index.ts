@@ -4,5 +4,6 @@
 
 export * from './mapToShelterDetail';
 export * from './mapToShelterList';
+export * from './mapToShelters';
 export * from './postShelterLikeFavorite.api';
 export * from './type';
