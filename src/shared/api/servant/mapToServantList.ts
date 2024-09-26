@@ -1,2 +1,12 @@
-// Note: API 요청 받은 데이터의 servantList를 클라이언트 포맷으로 데이터 변환하는 함수
-export const mapToServantList = () => {};
+import { Servant } from '../../types';
+
+export const mapToServantList = (servantList: Servant[]) =>
+  servantList.map((servant) => ({
+    id: servant.id,
+    shelterId: servant.shelter_id,
+    name: servant.name,
+    description: servant.description,
+    imageUrl: servant.image_url,
+    date: servant.date,
+    status: servant.status,
+  }));
